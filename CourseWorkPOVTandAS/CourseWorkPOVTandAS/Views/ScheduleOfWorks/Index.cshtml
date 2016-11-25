@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CourseWorkPOVTandAS.Models.ScheduleOfWork>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AcademicPlan.CodeOfDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlannedPercent)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AcademicPlan.CodeOfDepartment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlannedPercent)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ScheduleOfWorkId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ScheduleOfWorkId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ScheduleOfWorkId })
+        </td>
+    </tr>
+}
+
+</table>

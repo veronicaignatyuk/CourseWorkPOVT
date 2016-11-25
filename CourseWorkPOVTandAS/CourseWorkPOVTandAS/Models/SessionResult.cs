@@ -7,7 +7,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public class SessionResult
     {
-        public int Id { get; set; }
+        public int SessionResultId { get; set; }
         public int AcademicPlanId { get; set; }
         public virtual AcademicPlan AcademicPlan { get; set; }
         public int StudentId { get; set; }

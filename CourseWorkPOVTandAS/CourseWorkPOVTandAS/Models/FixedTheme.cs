@@ -7,7 +7,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public class FixedTheme
     {
-        public int Id { get; set; }
+        public int FixedThemeId { get; set; }
         public int TeacherId { get; set; }
         public virtual Teacher Teacher { get; set; }
         public int StudentId { get; set; }

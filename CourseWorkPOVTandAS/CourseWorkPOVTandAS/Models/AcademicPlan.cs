@@ -7,7 +7,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public class AcademicPlan
     {
-        public int Id { get; set; }
+        public int AcademicPlanId { get; set; }
         public string CodeOfDepartment { get; set; }
         public string ItemName { get; set; }
         public int SpecialityId { get; set; }

@@ -5,7 +5,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public partial class GradualProgress
     {
-        public int Id { get; set; }
+        public int GradualProgressId { get; set; }
         public int ScheduleOfWorkId { get; set; }
         public virtual ScheduleOfWork ScheduleOfWork { get; set; }
         public int FixedThemeId { get; set; }

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CourseWorkPOVTandAS.Models.SessionResult>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AcademicPlan.CodeOfDepartment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teacher.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mark)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AcademicPlan.CodeOfDepartment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teacher.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mark)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SessionResultId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SessionResultId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SessionResultId })
+        </td>
+    </tr>
+}
+
+</table>

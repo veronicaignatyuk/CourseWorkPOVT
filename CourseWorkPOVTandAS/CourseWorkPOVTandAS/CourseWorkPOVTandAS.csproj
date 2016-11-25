@@ -164,12 +164,28 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AcademicPlansController.cs" />
+    <Compile Include="Controllers\FixedThemesController.cs" />
+    <Compile Include="Controllers\GradualProgressesController.cs" />
+    <Compile Include="Controllers\GroupsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ScheduleOfWorksController.cs" />
+    <Compile Include="Controllers\SessionResultsController.cs" />
+    <Compile Include="Controllers\SpecialitiesController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\TeachersController.cs" />
+    <Compile Include="Controllers\ThemesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611251112123_init.cs" />
+    <Compile Include="Migrations\201611251112123_init.Designer.cs">
+      <DependentUpon>201611251112123_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademicPlan.cs" />
+    <Compile Include="Models\CourseContext.cs" />
     <Compile Include="Models\FixedTheme.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\GradualProgress.cs" />
@@ -190,9 +206,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\CourseContext.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -220,7 +233,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -235,8 +250,62 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\ThemeList.cshtml" />
+    <Content Include="Views\Themes\Create.cshtml" />
+    <Content Include="Views\Themes\Delete.cshtml" />
+    <Content Include="Views\Themes\Details.cshtml" />
+    <Content Include="Views\Themes\Edit.cshtml" />
+    <Content Include="Views\Themes\Index.cshtml" />
+    <Content Include="Views\GradualProgresses\Create.cshtml" />
+    <Content Include="Views\GradualProgresses\Delete.cshtml" />
+    <Content Include="Views\GradualProgresses\Details.cshtml" />
+    <Content Include="Views\GradualProgresses\Edit.cshtml" />
+    <Content Include="Views\GradualProgresses\Index.cshtml" />
+    <Content Include="Views\FixedThemes\Create.cshtml" />
+    <Content Include="Views\FixedThemes\Delete.cshtml" />
+    <Content Include="Views\FixedThemes\Details.cshtml" />
+    <Content Include="Views\FixedThemes\Edit.cshtml" />
+    <Content Include="Views\FixedThemes\Index.cshtml" />
+    <Content Include="Views\SessionResults\Create.cshtml" />
+    <Content Include="Views\SessionResults\Delete.cshtml" />
+    <Content Include="Views\SessionResults\Details.cshtml" />
+    <Content Include="Views\SessionResults\Edit.cshtml" />
+    <Content Include="Views\SessionResults\Index.cshtml" />
+    <Content Include="Views\ScheduleOfWorks\Create.cshtml" />
+    <Content Include="Views\ScheduleOfWorks\Delete.cshtml" />
+    <Content Include="Views\ScheduleOfWorks\Details.cshtml" />
+    <Content Include="Views\ScheduleOfWorks\Edit.cshtml" />
+    <Content Include="Views\ScheduleOfWorks\Index.cshtml" />
+    <Content Include="Views\AcademicPlans\Create.cshtml" />
+    <Content Include="Views\AcademicPlans\Delete.cshtml" />
+    <Content Include="Views\AcademicPlans\Details.cshtml" />
+    <Content Include="Views\AcademicPlans\Edit.cshtml" />
+    <Content Include="Views\AcademicPlans\Index.cshtml" />
+    <Content Include="Views\Specialities\Create.cshtml" />
+    <Content Include="Views\Specialities\Delete.cshtml" />
+    <Content Include="Views\Specialities\Details.cshtml" />
+    <Content Include="Views\Specialities\Edit.cshtml" />
+    <Content Include="Views\Specialities\Index.cshtml" />
+    <Content Include="Views\Groups\Create.cshtml" />
+    <Content Include="Views\Groups\Delete.cshtml" />
+    <Content Include="Views\Groups\Details.cshtml" />
+    <Content Include="Views\Groups\Edit.cshtml" />
+    <Content Include="Views\Groups\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Teachers\Create.cshtml" />
+    <Content Include="Views\Teachers\Delete.cshtml" />
+    <Content Include="Views\Teachers\Details.cshtml" />
+    <Content Include="Views\Teachers\Edit.cshtml" />
+    <Content Include="Views\Teachers\Index.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -244,6 +313,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611251112123_init.resx">
+      <DependentUpon>201611251112123_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

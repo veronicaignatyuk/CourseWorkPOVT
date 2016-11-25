@@ -7,7 +7,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public class Role
     {
-        public int Id { get; set; }
+        public int RoleId { get; set; }
         public string name { get; set; }
 
         virtual public ICollection<User> Users { get; set; }

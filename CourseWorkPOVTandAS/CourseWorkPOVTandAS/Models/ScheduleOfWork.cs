@@ -5,7 +5,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public partial class ScheduleOfWork
     {
-        public int Id { get; set; }
+        public int ScheduleOfWorkId { get; set; }
         public int AcademicPlanId { get; set; }
         public virtual AcademicPlan AcademicPlan { get; set; }
         public string StageName { get; set; }

@@ -54,3 +54,10 @@ F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\ru\Syst
 F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\obj\Debug\CourseWorkPOVTandAS.csprojResolveAssemblyReference.cache
 F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\obj\Debug\CourseWorkPOVTandAS.dll
 F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\obj\Debug\CourseWorkPOVTandAS.pdb
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\EntityFramework.dll
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\EntityFramework.SqlServer.dll
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\EntityFramework.xml
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\EntityFramework.SqlServer.xml
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\bin\ru\EntityFramework.resources.dll
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\obj\Debug\CourseWorkPOVTandAS.Migrations.init.resources
+F:\DOCS\work\2016\CourseWork\CourseWorkPOVTandAS\CourseWorkPOVTandAS\obj\Debug\CourseWorkPOVTandAS.csproj.GenerateResource.Cache

@@ -7,7 +7,7 @@ namespace CourseWorkPOVTandAS.Models
 {
     public class Theme
     {
-        public int Id { get; set; }
+        public int ThemeId { get; set; }
         public string TopicTitle { get; set; }
         public int AcademicPlanId { get; set; }
         public virtual AcademicPlan AcademicPlan { get; set; }

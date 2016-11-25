@@ -22,11 +22,16 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Темы", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Закрепленные темы", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("График гработы", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Успеваемость", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Итоги сессии", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Темы", "Index", "Themes", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Закрепленные темы", "Index", "FixedThemes", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("График гработы", "Index", "ScheduleOfWorks", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Успеваемость", "Index", "GradualProgresses", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Итоги сессии", "Index", "SessionResults", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Учебный план", "Index", "AcademicPlans", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Специальности", "Index", "Specialities", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Группы", "Index", "Groups", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Студенты", "Index", "Students", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Преподаватели", "Index", "Teachers", new { area = "" }, null)</li>
                 </ul>
             </div>
         </div>
