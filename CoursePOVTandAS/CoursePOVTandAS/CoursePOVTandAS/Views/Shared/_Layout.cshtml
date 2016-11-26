@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Курсовое проектирование и итогии сессии на кафедре ПОВТ и АС", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Темы", "Index", "Themes", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Закрепленные темы", "Index", "FixedThemes", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("График гработы", "Index", "ScheduleOfWorks", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Успеваемость", "Index", "GradualProgresses", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Итоги сессии", "Index", "SessionResults", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Учебный план", "Index", "AcademicPlans", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Специальности", "Index", "Specialities", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Группы", "Index", "Groups", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Студенты", "Index", "Students", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Преподаватели", "Index", "Teachers", new { area = "" }, null)</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/registration.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
